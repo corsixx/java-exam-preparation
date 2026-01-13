@@ -1,14 +1,29 @@
-# java-exam-preparation
-java exercises done for my univerisity coding exam.
-THIS REPO IS ONLY FOR MY JAVA EXERCISES
+# ☕ Java Exam Prep
+A collection of Java exercises and coding challenges developed for my university programming exam.
 
-###HOW TO USE MY CODE
-***First step***: open the terminal and go to the right directory
-***Second step***: **compile** filename.java with
+> [!IMPORTANT]  
+> This repository is strictly for personal practice and academic exercise purposes.
+
+---
+
+Open your terminal and move to the folder containing the source file:
+## 🚀 how to use my code
+
+Follow these steps to compile and run the programs using your terminal.
+
+1. **Open your terminal** and move to the folder containing the source file:
+  ```bash
+   cd path/to/your/directory
    ```
-   javac nomefile.java
-   ```
-***Last step***: **execute** the programm:
-     ```
-   java nomefile
-     ```
+2. **use the javac compiler** to create the .class file::
+```bash
+javac fileName.java
+```
+3. **Execute the Program**  Run the compiled Java bytecode:
+```bash
+java fileName
+```
+## 🛠️ Requirements
+   Java JDK (Recommended version 11 or higher).
+   A terminal/command prompt or a code editor (like VS Code).
+
