@@ -1,4 +1,8 @@
 *.class
 .vscode/
-bin/
 *.code-workspace
+.idea/
+.vscode/
+*.iml
+*.class
+bin/
