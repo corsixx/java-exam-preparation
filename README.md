@@ -6,7 +6,6 @@ A collection of Java exercises and coding challenges developed for my university
 
 ---
 
-Open your terminal and move to the folder containing the source file:
 ## 🚀 how to use my code
 
 Follow these steps to compile and run the programs using your terminal.
@@ -34,3 +33,4 @@ java fileName
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
 >>>>>>> 21c03e6 (Primo caricamento delle cartelle)
+
