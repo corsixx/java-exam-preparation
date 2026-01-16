@@ -22,7 +22,7 @@ public class Solver {
                     String newNome = scanner.next();
                     int newCosto = scanner.nextInt();
                     int newCalorie = scanner.nextInt();
-                    macchinetta.aggiungiProdotto(new Bevanda(newCalorie, newCosto, newNome));
+                    macchinetta.aggiungiProdotto(new Merendina(newCalorie, newCosto, newNome));
                     break;
                 }
                 case "S": {
