@@ -34,11 +34,17 @@ public class Solver {
                     break;
                 }
                 case "CB": {
-
+                    int volMin = scanner.nextInt(); 
+                    Bevanda bevandaComprata=macchinetta.compraBevanda(soldiaDisposizione,volMin);
+                    soldiaDisposizione= soldiaDisposizione - bevandaComprata.getCosto();
+                    bevandaComprata.toString();
                     break;
                 }
                 case "CM": {
-
+                    int calorieMin = scanner.nextInt(); 
+                    Merendina MerendinaComprata=macchinetta.compraMerendina(soldiaDisposizione,calorieMin);
+                    soldiaDisposizione= soldiaDisposizione - MerendinaComprata.getCosto();
+                    MerendinaComprata.toString();
                     break;
                 }
                 case "SORT": {
@@ -47,8 +53,7 @@ public class Solver {
                     break;
                 }
                 case "F": {
-
-                    break;
+                    return;
                 }
             }
         }
