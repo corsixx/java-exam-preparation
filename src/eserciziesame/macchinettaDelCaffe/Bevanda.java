@@ -11,4 +11,10 @@ public class Bevanda extends Prodotto {
     public int getVolume() {
         return this.volume;
     }
+
+    @Override
+    public String toString() {
+        return "Bevanda[nome: " + super.getNome() + ",volume: " + this.volume + ",costo: " + super.getCosto() + "]";
+    }
+
 }

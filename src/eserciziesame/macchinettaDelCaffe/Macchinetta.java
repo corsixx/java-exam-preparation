@@ -61,4 +61,22 @@ public class Macchinetta {
         }
         return null;
     }
+
+    public void ordinaProdottiPerCosto() {
+        ArrayList<Prodotto> copia = new ArrayList<>(prodotti);
+        /*
+         * copia.sort(new Comparator<Prodotto>(){
+         * 
+         * @Override
+         * public int compare(Prodotto p1, Prodotto p2) {
+         * return Integer.compare(p1.getCosto(), p2.getCosto());
+         * }
+         * })
+         */
+        // lambda expression
+        copia.sort((p1, p2) -> Integer.compare(p1.getCosto(), p2.getCosto()));
+        for (Prodotto p : copia) {
+            System.out.println(p);
+        }
+    }
 }

@@ -16,4 +16,9 @@ public abstract class Prodotto {
     public String getNome() {
         return this.nome;
     }
+
+    // trasformare una classe in stringa
+    public String toString() {
+        return this.nome + " - " + this.costo + " centesimi";
+    }
 }
