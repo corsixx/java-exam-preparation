@@ -49,7 +49,6 @@ public class Solver {
                 }
                 case "SORT": {
                     macchinetta.ordinaProdottiPerCosto();
-
                     break;
                 }
                 case "F": {
