@@ -15,6 +15,7 @@ public class Solver
         people = group.getPeople();
         System.out.println("Numero di persone nel gruppo: " + people.size());
         System.out.println("Primo nome della prima persona: " + people.get(0).getFirstName());
+        System.out.println("Primo nome della prima persona: " + group.getPeople().get(0).getFirstName());   //uguale a sopra
         System.out.println("Primo nome della seconda persona: " + people.get(1).getFirstName());
         /*people è una variabile di tipo ArrayList, cioè un
         puntatore all’oggetto ArrayList (tipo ArrayList* in C) */
