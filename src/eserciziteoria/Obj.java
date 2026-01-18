@@ -18,7 +18,8 @@ public class Obj
     public int getContatore() 
     {
         // Qui 'this' è permesso perché il metodo non è statico.
-        return this.contatore;
+        return contatore;
+        //return this.contatore;
     }
 
     public static void main(String[] args) {
