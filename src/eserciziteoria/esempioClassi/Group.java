@@ -20,4 +20,6 @@ public class Group
     {
         return this.people;
     }
+    /*Restituisce people, cioè un puntatore a ArrayList
+    (tipo ArrayList* in C) */
 }
