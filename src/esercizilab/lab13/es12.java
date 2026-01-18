@@ -10,7 +10,7 @@ le e minuscole. Non dovete considerare spazi e segni di punteggiatura. Suddivide
 il codice in funzioni, e usate delle strutture dati dinamiche*/
 public class es12 
 {
-    static HashMap contaOccorrenze(String s)
+    static HashMap<String, Integer> contaOccorrenze(String s)
     {
         /*avrei utilizzato una matrice di arraylist ma ho scoperto che ce una struttura piu semplice, cioe HashMap*/
         HashMap<String,Integer> occorrenze = new HashMap<>();
