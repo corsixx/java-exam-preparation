@@ -1,5 +1,6 @@
 package eserciziesame.noleggioAuto;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /*Classe Noleggio: Classe che rappresenta un noleggio auto. Ha un so-
@@ -81,5 +82,8 @@ public class NoleggioAuto {
         for (Veicolo v : copiaLista) {
             System.out.println(v.getModello() + " - Noleggi: " + v.getNoleggi());
         }
+    }
+    public ArrayList<Veicolo> getListaVeicoli() {
+        return this.listaVeicoli;
     }
 }
