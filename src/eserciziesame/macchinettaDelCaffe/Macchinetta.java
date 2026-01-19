@@ -53,7 +53,7 @@ public class Macchinetta {
 
             if (p instanceof Bevanda) {
                 Bevanda b = (Bevanda) p;
-                if (b.getCosto() <= soldi && b.getVolume() <= volume) {
+                if (b.getCosto() <= soldi && b.getVolume() >= volume) {
                     prodotti.remove(i);
                     return b;
                 }

@@ -16,4 +16,6 @@ public class Merendina extends Prodotto {
     public String toString() {
         return super.toString() + " - " + this.calorie + " calorie";
     }
+    // super usa toString della classe padre Prodotto ealla stampa del genitore
+    // aggiunge calorie
 }
