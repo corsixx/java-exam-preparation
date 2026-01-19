@@ -19,4 +19,9 @@ public class Auto extends Veicolo {
     public int getNumeroPax() {
         return this.numeroPax;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Numero di Passeggeri: " + this.numeroPax;
+    }
 }

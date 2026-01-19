@@ -14,4 +14,9 @@ public class Moto extends Veicolo {
     public int getCavalli() {
         return this.Cavalli;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Cavalli: " + this.Cavalli;
+    }
 }

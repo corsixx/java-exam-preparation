@@ -30,4 +30,18 @@ public abstract class Veicolo {
     public String getModello() {
         return this.Modello;
     }
+
+    public int getNoleggi() {
+        return this.numeroNoleggi;
+    }
+
+    public void addNdiNoleggi() {
+        this.numeroNoleggi++;
+    }
+
+    @Override
+    public String toString() {
+        return "Targa: " + Targa + ", Modello: " + Modello + ", Anno di Immatricolazione: "
+                + annoDiImmatricolazione + ", Numero di Noleggi: " + numeroNoleggi;
+    }
 }

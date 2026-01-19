@@ -30,9 +30,10 @@ public class NoleggioAuto {
     }
 
     public void aggiungiVeicolo(Veicolo newVeicolo) {
-        if (newVeicolo.getAnnoDiImmatricolazione() == 2025) {
-            listaVeicoli.add(newVeicolo);
-        }
+        // if (newVeicolo.getAnnoDiImmatricolazione() == 2025) {
+        listaVeicoli.add(newVeicolo);
+        // }
+
     }
 
     public Auto noleggiaAuto(int numeroPax, int anno) {
@@ -63,9 +64,22 @@ public class NoleggioAuto {
 
     public void restituisciVeicolo(Veicolo VeicoloDaRestituire) {
         listaVeicoli.add(VeicoloDaRestituire);
+        VeicoloDaRestituire.addNdiNoleggi();
     }
 
     public void SORT() {
         listaVeicoli.sort((v1, v2) -> Integer.compare(v1.getAnnoDiImmatricolazione(), v2.getAnnoDiImmatricolazione()));
+        //// Ordinamento DECRESCENTE (dal 2025 al 1800)
+        // listaVeicoli.sort((v1, v2) ->
+        //// Integer.compare(v2.getAnnoDiImmatricolazione(),v1.getAnnoDiImmatricolazione()));
+    }
+
+    public void veicoliPerNoleggi() {
+        ArrayList<Veicolo> copiaLista = new ArrayList<>(listaVeicoli);
+
+        copiaLista.sort((v1, v2) -> Integer.compare(v1.getNoleggi(), v2.getNoleggi()));
+        for (Veicolo v : copiaLista) {
+            System.out.println(v.getModello() + " - Noleggi: " + v.getNoleggi());
+        }
     }
 }
