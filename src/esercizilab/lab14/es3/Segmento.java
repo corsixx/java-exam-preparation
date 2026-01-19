@@ -36,4 +36,8 @@ public class Segmento
         else
             return false;
     }
+    public Segmento copy()
+    {
+        return new Segmento(this.puntoA, this.puntoB);
+    }
 }

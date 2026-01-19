@@ -75,4 +75,8 @@ public class Vett
         else
             return false;
     }
+    public Vett copy()
+    {
+        return new Vett(this.x,this.y);
+    }
 }
