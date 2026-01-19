@@ -28,7 +28,7 @@ public class NoleggioAuto {
     private ArrayList<Veicolo> listaVeicoli;
 
     public NoleggioAuto() {
-        ArrayList<Veicolo> listaVeicoli = new ArrayList<>();
+        this.listaVeicoli = new ArrayList<>();
     }
 
     public void aggiungiVeicolo(Veicolo newVeicolo) {
@@ -67,6 +67,19 @@ public class NoleggioAuto {
     public void restituisciVeicolo(Veicolo VeicoloDaRestituire) {
         listaVeicoli.add(VeicoloDaRestituire);
         VeicoloDaRestituire.addNdiNoleggi();
+        System.out.println("Veicolo Restituito: " + VeicoloDaRestituire.toString());
+    }
+
+    public void restiuisciVeicolo2(String targa)
+    {
+        for (Veicolo v : listaVeicoli) {
+            if (v.getTarga().equals(targa)) {
+                listaVeicoli.add(v);
+                v.addNdiNoleggi(); // Incrementa il contatore
+                System.out.println("Veicolo Restituito: " + v.toString());
+                return;
+            }
+        }
     }
 
     public void SORT() {

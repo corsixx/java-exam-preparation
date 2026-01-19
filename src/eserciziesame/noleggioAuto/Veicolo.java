@@ -13,7 +13,7 @@ public abstract class Veicolo {
         this.numeroNoleggi = other.numeroNoleggi;
     }
 
-    public Veicolo(String targa, String Modello, int annoDiImmatricolazione, int numeroNoleggi) {
+    public Veicolo(String Targa, String Modello, int annoDiImmatricolazione, int numeroNoleggi) {
         this.Targa = Targa;
         this.Modello = Modello;
         if (annoDiImmatricolazione >= 1800 && annoDiImmatricolazione <= 2025)
@@ -33,6 +33,9 @@ public abstract class Veicolo {
 
     public int getNoleggi() {
         return this.numeroNoleggi;
+    }
+    public String getTarga() {
+        return this.Targa;
     }
 
     public void addNdiNoleggi() {

@@ -46,7 +46,7 @@ public class Solver {
                         int annoImmatricolazione = scanner.nextInt();
                         int numeroNoleggi = scanner.nextInt();
                         noleggio.aggiungiVeicolo(new Auto(nPax, targa, modello, annoImmatricolazione, numeroNoleggi));
-                        System.out.println("Veicolo Aggiunto: "+ new Auto(nPax, targa, modello, annoImmatricolazione, numeroNoleggi).toString());
+                        System.out.println("Auto Aggiunta: "+ new Auto(nPax, targa, modello, annoImmatricolazione, numeroNoleggi).toString());
                     } else if (tipoVeicolo.equals("M")) {
                         int cavalli = scanner.nextInt();
                         String targa = scanner.next();
@@ -54,8 +54,9 @@ public class Solver {
                         int annoImmatricolazione = scanner.nextInt();
                         int numeroNoleggi = scanner.nextInt();
                         noleggio.aggiungiVeicolo(new Moto(cavalli, targa, modello, annoImmatricolazione, numeroNoleggi));
-                        System.out.println("Veicolo Aggiunto: "+ new Moto(cavalli, targa, modello, annoImmatricolazione, numeroNoleggi).toString());
+                        System.out.println("Moto Aggiunta: "+ new Moto(cavalli, targa, modello, annoImmatricolazione, numeroNoleggi).toString());
                     }
+                    break;
                 }
                 case "R": {
                     String tipoVeicolo = scanner.next();
@@ -65,18 +66,17 @@ public class Solver {
                         String modello = scanner.next();
                         int annoImmatricolazione = scanner.nextInt();
                         int numeroNoleggi = scanner.nextInt();
-                        noleggio.restituisciVeicolo(
-                                new Auto(numeroNoleggi, targa, modello, annoImmatricolazione, numeroNoleggi));
+                        noleggio.restituisciVeicolo(new Auto(numeroNoleggi, targa, modello, annoImmatricolazione, numeroNoleggi));
                     } else if (tipoVeicolo.equals("M")) {
                         int cavalli = scanner.nextInt();
                         String targa = scanner.next();
                         String modello = scanner.next();
                         int annoImmatricolazione = scanner.nextInt();
                         int numeroNoleggi = scanner.nextInt();
-                        noleggio.restituisciVeicolo(
-                                new Moto(cavalli, targa, modello, annoImmatricolazione, numeroNoleggi));
+                        noleggio.restituisciVeicolo(new Moto(cavalli, targa, modello, annoImmatricolazione, numeroNoleggi));
                     }
                     noleggio.veicoliPerNoleggi();
+                    break;
                 }
                 case "NAuto": {
                     int annoImmatricolazione = scanner.nextInt();
@@ -86,6 +86,7 @@ public class Solver {
                         System.out.println("auto noleggiata: "+autoNoleggiata.toString());
                     else
                         System.out.println("auto non trovata");
+                    break;
                 }
                 case "NMoto": {
                     int cavalli = scanner.nextInt();
@@ -95,12 +96,14 @@ public class Solver {
                         System.out.println("auto noleggiata: "+motoNoleggiata  .toString());
                     else
                         System.out.println("moto non trovata");
+                    break;
                 }
                 case "S": {
                     noleggio.SORT();
                     for(Veicolo v : noleggio.getListaVeicoli()){
                         System.out.println(v.toString());
                     }
+                    break;
                 }
                 case "END": {
                     System.out.println("FINE PROGRAMMA");
