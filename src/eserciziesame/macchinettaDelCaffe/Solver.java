@@ -34,17 +34,21 @@ public class Solver {
                     break;
                 }
                 case "CB": {
-                    int volMin = scanner.nextInt(); 
-                    Bevanda bevandaComprata=macchinetta.compraBevanda(soldiaDisposizione,volMin);
-                    soldiaDisposizione= soldiaDisposizione - bevandaComprata.getCosto();
-                    bevandaComprata.toString();
+                    int volMin = scanner.nextInt();
+                    Bevanda bevandaComprata = macchinetta.compraBevanda(soldiaDisposizione, volMin);
+                    if (bevandaComprata != null) {
+                        soldiaDisposizione = soldiaDisposizione - bevandaComprata.getCosto();
+                        bevandaComprata.toString();
+                    }
                     break;
                 }
                 case "CM": {
-                    int calorieMin = scanner.nextInt(); 
-                    Merendina MerendinaComprata=macchinetta.compraMerendina(soldiaDisposizione,calorieMin);
-                    soldiaDisposizione= soldiaDisposizione - MerendinaComprata.getCosto();
-                    MerendinaComprata.toString();
+                    int calorieMin = scanner.nextInt();
+                    Merendina merendinaComprata = macchinetta.compraMerendina(soldiaDisposizione, calorieMin);
+                    if (merendinaComprata != null) {
+                        soldiaDisposizione = soldiaDisposizione - merendinaComprata.getCosto();
+                        merendinaComprata.toString();
+                    }
                     break;
                 }
                 case "SORT": {

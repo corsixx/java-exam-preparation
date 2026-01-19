@@ -11,4 +11,9 @@ public class Merendina extends Prodotto {
     public int getCalorie() {
         return this.calorie;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " - " + this.calorie + " calorie";
+    }
 }
