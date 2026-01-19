@@ -68,4 +68,11 @@ public class Vett
     {
         return "x: "+this.x+" y: "+this.y;
     }
+    public boolean equals(Vett other)
+    {
+        if(this.x == other.x && this.y == other.y)
+            return true;
+        else
+            return false;
+    }
 }

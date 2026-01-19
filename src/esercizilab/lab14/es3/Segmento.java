@@ -29,4 +29,11 @@ public class Segmento
     {
         return this.puntoB;
     }
+    public boolean equals(Segmento other)
+    {
+        if(this.puntoA.equals(other.puntoA) && this.puntoB.equals(other.puntoB))
+            return true;
+        else
+            return false;
+    }
 }
