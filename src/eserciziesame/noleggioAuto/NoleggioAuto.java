@@ -64,4 +64,8 @@ public class NoleggioAuto {
     public void restituisciVeicolo(Veicolo VeicoloDaRestituire) {
         listaVeicoli.add(VeicoloDaRestituire);
     }
+
+    public void SORT() {
+        listaVeicoli.sort((v1, v2) -> Integer.compare(v1.getAnnoDiImmatricolazione(), v2.getAnnoDiImmatricolazione()));
+    }
 }

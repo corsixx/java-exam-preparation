@@ -69,6 +69,13 @@ public class Macchinetta {
          * 
          * @Override
          * public int compare(Prodotto p1, Prodotto p2) {
+         * if(p1.getCosto() < p2.getCosto())
+         * return -1;
+         * else if (p1.getCosto() > p2.getCosto())
+         * return 1;
+         * else
+         * return 0;
+         * //quello scritto sopra equivale a questo
          * return Integer.compare(p1.getCosto(), p2.getCosto());
          * }
          * })
