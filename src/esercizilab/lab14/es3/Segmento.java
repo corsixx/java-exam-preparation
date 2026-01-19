@@ -10,6 +10,23 @@ Testate i metodi sviluppati in un apposito main. */
 public class Segmento 
 {
     private Vett puntoA;
-    private Vett PuntoB;
-    
+    private Vett puntoB;
+    public Segmento(Vett puntoA, Vett puntoB)
+    {
+        this.puntoA = puntoA;
+        this.puntoB = puntoB;
+    }
+    public Segmento(double x1, double y1, double x2, double y2)
+    {
+        this.puntoA = new Vett(x1, y1);
+        this.puntoB = new Vett(x2, y2);
+    }
+    public Vett getA()
+    {
+        return this.puntoA;
+    }
+    public Vett GetB()
+    {
+        return this.puntoB;
+    }
 }
