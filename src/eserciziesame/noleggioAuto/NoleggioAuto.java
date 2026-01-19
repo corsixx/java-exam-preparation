@@ -23,6 +23,7 @@ viene tolto dalla lista di veicoli.
 zione di un veicolo. Lo riaggiunge quindi alla lista dei Veicoli.
 – void sort(void): ordina i prodotti per ordine crescente di anno
 di immatricolazione. */
+
 public class NoleggioAuto {
     private ArrayList<Veicolo> listaVeicoli;
 
