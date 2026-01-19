@@ -88,4 +88,8 @@ public class Cerchio
     {
         return "Cerchio di raggio: "+this.raggio+" e cordinate "+this.CentroCerchio.toString();
     }
+    public Cerchio copy()
+    {
+        return new Cerchio(this.CentroCerchio, this.raggio);
+    }
 }
