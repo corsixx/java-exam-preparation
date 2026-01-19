@@ -59,7 +59,10 @@ public class Solver {
                     break;
                 }
                 case "R": {
-                    String tipoVeicolo = scanner.next();
+                    String giveTarga = scanner.next();
+                    noleggio.restiuisciVeicolo2(giveTarga);
+                    noleggio.veicoliPerNoleggi();
+                    /*String tipoVeicolo = scanner.next();
                     if (tipoVeicolo.equals("A")) {
                         int nPax = scanner.nextInt();
                         String targa = scanner.next();
@@ -74,8 +77,7 @@ public class Solver {
                         int annoImmatricolazione = scanner.nextInt();
                         int numeroNoleggi = scanner.nextInt();
                         noleggio.restituisciVeicolo(new Moto(cavalli, targa, modello, annoImmatricolazione, numeroNoleggi));
-                    }
-                    noleggio.veicoliPerNoleggi();
+                    }*/
                     break;
                 }
                 case "NAuto": {
