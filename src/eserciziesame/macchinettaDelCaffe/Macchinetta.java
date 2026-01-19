@@ -76,7 +76,7 @@ public class Macchinetta {
         // lambda expression
         copia.sort((p1, p2) -> Integer.compare(p1.getCosto(), p2.getCosto()));
         for (Prodotto p : copia) {
-            System.out.println(p);
+            System.out.println(p.toString());
         }
     }
 }

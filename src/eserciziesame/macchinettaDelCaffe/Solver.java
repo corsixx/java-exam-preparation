@@ -6,6 +6,7 @@ public class Solver {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        System.out.println("Inizio Esercizio Macchinetta del Caffè");
         int soldiaDisposizione = 0;
         Macchinetta macchinetta = new Macchinetta();
         while (scanner.hasNext()) {
@@ -38,7 +39,7 @@ public class Solver {
                     Bevanda bevandaComprata = macchinetta.compraBevanda(soldiaDisposizione, volMin);
                     if (bevandaComprata != null) {
                         soldiaDisposizione = soldiaDisposizione - bevandaComprata.getCosto();
-                        bevandaComprata.toString();
+                        System.out.println(bevandaComprata.toString());
                     }
                     break;
                 }
@@ -47,7 +48,7 @@ public class Solver {
                     Merendina merendinaComprata = macchinetta.compraMerendina(soldiaDisposizione, calorieMin);
                     if (merendinaComprata != null) {
                         soldiaDisposizione = soldiaDisposizione - merendinaComprata.getCosto();
-                        merendinaComprata.toString();
+                        System.out.println(merendinaComprata.toString());
                     }
                     break;
                 }
