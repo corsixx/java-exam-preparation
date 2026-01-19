@@ -1,6 +1,6 @@
 package eserciziesame.noleggioAuto;
 
-public class Veicolo {
+public abstract class Veicolo {
     private String Targa;
     private String Modello;
     private int annoDiImmatricolazione;
