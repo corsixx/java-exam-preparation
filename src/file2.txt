@@ -6,7 +6,7 @@ NAuto 2020 4
 NAuto 1980 4
 NMoto 1000 YAMAHA
 NMoto 200  PIAGGIO
-s
+S
 R wtsa4
 R GCAM4
 S
