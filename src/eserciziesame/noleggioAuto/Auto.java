@@ -15,4 +15,8 @@ public class Auto extends Veicolo {
         else
             this.numeroPax = 5;
     }
+
+    public int getNumeroPax() {
+        return this.numeroPax;
+    }
 }

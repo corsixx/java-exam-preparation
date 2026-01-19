@@ -22,4 +22,8 @@ public abstract class Veicolo {
             this.annoDiImmatricolazione = 2025;
         this.numeroNoleggi = numeroNoleggi;
     }
+
+    public int getAnnoDiImmatricolazione() {
+        return this.annoDiImmatricolazione;
+    }
 }
