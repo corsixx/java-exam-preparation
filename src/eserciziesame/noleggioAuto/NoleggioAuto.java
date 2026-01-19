@@ -36,15 +36,32 @@ public class NoleggioAuto {
     }
 
     public Auto noleggiaAuto(int numeroPax, int anno) {
-        for (Veicolo v : listaVeicoli) {
-            if (v instanceof Auto) {
-                Auto copy = (Auto) v;
+        for (int i = 0; i < listaVeicoli.size(); i++) {
+            if (listaVeicoli.get(i) instanceof Auto) {
+                Auto copy = (Auto) listaVeicoli.get(i);
                 if (copy.getNumeroPax() >= numeroPax && copy.getAnnoDiImmatricolazione() >= anno) {
-                    listaVeicoli.remove(v);
+                    listaVeicoli.remove(i);
                     return copy;
                 }
             }
         }
         return null;
+    }
+
+    public Moto noleggiaMoto(String Modello, int Cavalli) {
+        for (int i = 0; i < listaVeicoli.size(); i++) {
+            if (listaVeicoli.get(i) instanceof Moto) {
+                Moto copy = (Moto) listaVeicoli.get(i);
+                if (copy.getModello().toLowerCase().equals(Modello.toLowerCase()) && copy.getCavalli() >= Cavalli) {
+                    listaVeicoli.remove(i);
+                    return copy;
+                }
+            }
+        }
+        return null;
+    }
+
+    public void restituisciVeicolo(Veicolo VeicoloDaRestituire) {
+        listaVeicoli.add(VeicoloDaRestituire);
     }
 }

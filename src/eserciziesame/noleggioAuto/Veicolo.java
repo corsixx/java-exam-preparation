@@ -26,4 +26,8 @@ public abstract class Veicolo {
     public int getAnnoDiImmatricolazione() {
         return this.annoDiImmatricolazione;
     }
+
+    public String getModello() {
+        return this.Modello;
+    }
 }

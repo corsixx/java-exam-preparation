@@ -10,4 +10,8 @@ public class Moto extends Veicolo {
         else
             this.Cavalli = 1000;
     }
+
+    public int getCavalli() {
+        return this.Cavalli;
+    }
 }
