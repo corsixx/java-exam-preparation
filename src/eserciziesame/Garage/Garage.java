@@ -36,8 +36,10 @@ public class Garage
             if(a.getTarga() == newAuto.getTarga())
             {
                 parcheggio.remove(newAuto);
+                return;
             }
         }
+        System.out.println("->auto non presente nel parcheggio");
     }
     public void visualizzaAuto()
     {
