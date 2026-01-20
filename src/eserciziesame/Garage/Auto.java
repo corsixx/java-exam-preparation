@@ -18,4 +18,13 @@ public class Auto
         this.Modello = other.Modello;
         this.Targa = other.Targa;
     }
+    public int getTarga()
+    {
+        return this.Targa;
+    }
+    @Override
+    public String toString()
+    {
+        return "auto modello: "+this.Modello+" targa: "+this.Targa;
+    }
 }
