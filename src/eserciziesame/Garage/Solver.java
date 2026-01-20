@@ -59,7 +59,9 @@ public class Solver {
                         personaTrovata.parcheggia(garage);
                     else
                         System.out.println("-> persona non trovata !!");
+                    System.out.println("---------GARAGE--------");
                     garage.visualizzaAuto();
+                    System.out.println("-----------------------");
                     break;
                 }
                 case "U": {
@@ -69,7 +71,9 @@ public class Solver {
                         personaTrovata.rimuoviAuto(garage);
                     else
                         System.out.println("-> persona non trovata !!");
+                    System.out.println("---------GARAGE--------");
                     garage.visualizzaAuto();
+                    System.out.println("-----------------------");
                     break;
                 }
                 default: {
