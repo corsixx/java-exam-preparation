@@ -28,4 +28,8 @@ public class Persona
     {
         garage.rimuoviAuto(this.auto);
     }
+    public String getNome()
+    {
+        return this.nome;
+    }
 }
