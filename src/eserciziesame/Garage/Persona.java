@@ -1,4 +1,5 @@
 package eserciziesame.Garage;
+
 /*Classe Persona: rappresenta una persona che possiede un'auto.
 • Attributi:
 	o String nome: il nome della persona.
@@ -8,28 +9,30 @@ package eserciziesame.Garage;
         permette alla persona di parcheggiare la propria auto nel garage.
 	o public void rimuoviAuto(Garage garage)
         permette alla persona di rimuovere la propria auto dal garage. */
-public class Persona 
-{
+public class Persona {
     private String nome;
     private Auto auto;
-    public Persona(String nome, Auto auto)
-    {
+
+    public Persona(String nome, Auto auto) {
         this.nome = nome;
         this.auto = auto;
     }
-    public void parcheggia(Garage garage)
-    {
-        if(garage.getCapienza() > garage.getPostiOccupati())
-            garage.aggiungiAuto(this.auto);
-        else
+
+    public void parcheggia(Garage garage) {
+        if (garage.getCapienza() > garage.getPostiOccupati()) {
+            if (garage.aggiungiAuto(this.auto) == 1)
+                System.out.println("parcheggio eseguito dall'" + this.auto);
+            else
+                System.out.println("impossibile parcheggiare l'" + this.auto);
+        } else
             System.out.println("->tutti i posti sono occupati");
     }
-    public void rimuoviAuto(Garage garage)
-    {
+
+    public void rimuoviAuto(Garage garage) {
         garage.rimuoviAuto(this.auto);
     }
-    public String getNome()
-    {
+
+    public String getNome() {
         return this.nome;
     }
 }
