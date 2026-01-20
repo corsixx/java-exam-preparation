@@ -58,5 +58,4 @@ public class Garage
         // e non tutto l'arraylist parcheggio(se facessi getParcheggio)
         return this.parcheggio.size();
     }
-    public int addCapienza()
 }
