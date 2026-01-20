@@ -13,9 +13,11 @@ import java.util.ArrayList;
 public class Garage 
 {
     private ArrayList<Auto> parcheggio;
-    public Garage()
+    private int capienza;
+    public Garage(int capienza)
     {
         this.parcheggio = new ArrayList<>();
+        this.capienza = capienza;
     }
     public int aggiungiAuto(Auto newAuto)
     {
@@ -44,4 +46,15 @@ public class Garage
             System.out.println(a);
         }
     }
+    public int getCapienza()
+    {
+        return this.capienza;
+    }
+    public int getPostiOccupati()
+    {
+        //aggiunge sicurezza poiche cosi posso vedere solo quanti posti sono occupati
+        // e non tutto l'arraylist parcheggio(se facessi getParcheggio)
+        return this.parcheggio.size();
+    }
+    public int addCapienza()
 }
