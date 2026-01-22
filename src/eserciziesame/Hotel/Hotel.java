@@ -72,7 +72,7 @@ public class Hotel
     {
         for(Stanza stanza : listaStanze)
         {
-            if(stanza.getNomeOspite() == nomeOspite)    //so che dovevo fare equals, ma ero di fretta e non ci ho pensato
+            if(stanza.getNomeOspite().equals(nomeOspite))   //io all'esame ho fatto stanza.getNomeOspite() == nomeOspite però non va bene perchè confronta i riferimenti
             {
                 stanza.setNomeOspite(null);
                 return stanza;
